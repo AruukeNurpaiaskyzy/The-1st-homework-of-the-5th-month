@@ -4,8 +4,22 @@ from django.db import models
 class News(models.Model):
     title = models.CharField(max_length=155, verbose_name = "заголовка")
     description = models.TextField(verbose_name= "описание")
+
 def __str__(self):
     return self.title
+
 class Meta:
     verbose_name = ""
     verbose_name_plural = "основные настройки"
+
+
+class News(models.Model):
+    title = models.CharField(max_length=155, verbose_name = "заголовка")
+    description = models.TextField(verbose_name= "описание")
+    
+def __str__(self):
+    return self.title
+
+class Meta:
+    verbose_name = ""
+    verbose_name_plural = "основные настройки2"
